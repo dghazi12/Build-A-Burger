@@ -61,7 +61,7 @@ const Cheese = {
         borderRadius: '20px'
 }
     
-const Salad = {
+const Lettuce = {
         width: '85%',
         height: '7%',
         margin: '2% auto',
@@ -98,8 +98,8 @@ class BurgerIngredient extends Component {
             case ('cheese'):
                 ingredient = <div style={Cheese}></div>;
                 break;
-            case ('salad'):
-                ingredient = <div style={Salad}></div>;
+            case ('lettuce'):
+                ingredient = <div style={Lettuce}></div>;
                 break;
             case ('bacon'):
                 ingredient = <div style={Bacon}></div>;
