@@ -20,6 +20,18 @@ const controls = [
     { label: 'Meat', type: 'meat' },
 ]
 
+const OrderButtonCss = {
+    backgroundColor: '#DAD735',
+    outline: 'none',
+    cursor: 'pointer',
+    border: '1px solid #966909',
+    color: '#966909',
+    fontFamily: 'inherit',
+    fontSize: '1.2em',
+    padding: '15px 30px',
+    boxShadow: '2px 2px 2px #966909'
+}
+
 const buildControls = (props) => (
     <div style={BuildControlsCss}>
         <p>Current Price: {props.price.toFixed(2)}</p>
@@ -31,6 +43,7 @@ const buildControls = (props) => (
                 removed={() => props.ingredientRemoved(ctrl.type)}
                 disabled={props.disabled[ctrl.type]} />
         ))}
+        <button style={OrderButtonCss}>Order Now</button>
     </div>
 );
 
