@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
@@ -8,14 +8,29 @@ const Content = {
     marginTop: '72px'
 }
 
-const layout = (props) => (
-    <Aux>
-        <Toolbar />
-        <SideDrawer />
-        <main style={Content}>
-            {props.children}
-        </main>
-    </Aux>
-);
+class Layout extends Component {
 
-export default layout;
+    state = {
+        showSideDrawer: true
+    }
+
+    SideDrawerClosedHandler = () => {
+        this.setState({showSideDrawer: false});
+    }
+
+    render() {
+        return (
+            <Aux>
+                <Toolbar />
+                <SideDrawer 
+                    open={this.state.showSideDrawer} 
+                    closed={this.SideDrawerClosedHandler} />
+                <main style={Content}>
+                    {this.props.children}
+                </main>
+            </Aux>
+        )
+    }
+} 
+
+export default Layout;
