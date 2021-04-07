@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Build-A-Burger!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a simple build a burger application. User will be able to select different ingredients to add to their burger and in the end will receive a total for their customized burger.
 
-In the project directory, you can run:
+## User Story
 
-### `yarn start`
+    AS A restaurant owner
+    I WANT to generate an app that lets users build their burgers
+    SO THAT I know what they like to eat on their burgers and they know the total cost of the burger
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Criteria
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    GIVEN two buns for the burger
 
-### `yarn test`
+    WHEN the user clicks on the More button for the condiments
+    THEN the condiment will be added to the burger on the screen and the price of the burger will increase
+    WHEN the user clicks on the Less button
+    THEN that condiment will be removed from the burger and the price will decrease
+    WHEN the user clicks on the ORDER NOW button
+    THEN a screen will appear with the selected ingredients and price of the burger
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Heroku Link
 
-### `yarn build`
+The link below will give you access to the web application via the Heroku web service:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://ghazi-build-a-burger.herokuapp.com/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Local Environment Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application locally, first clone this repository with the following command:
 
-### `yarn eject`
+    https://github.com/dghazi12/davidaghazi13.github.io.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Next, install the application dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Lastly, start the application server using the command line below:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    npm start or yarn start
 
-## Learn More
+## Preview
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](src/assests/images/BuildABurger.gif)
