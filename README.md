@@ -43,4 +43,4 @@ Lastly, start the application server using the command line below:
 
 ## Preview
 
-![](src/assests/images/BuildABurger.gif)
+![](src/assets/images/BuildABurger.gif)
